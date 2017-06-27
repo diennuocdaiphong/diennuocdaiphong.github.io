@@ -137,7 +137,7 @@
 		                        <h4 class="title"></h4>
 		                        <!-- /Text title -->
 		                        <!-- Text description -->
-		                        <p class="description">
+		                        <p class="description"><BR>
 								</p>
 		                        <!-- /Text description -->
 		                        <div class="slide-btns description">	                      
@@ -346,18 +346,12 @@
                          
                         </figure>
                         
-                    </li>
-                        
+                    </li>                        
                     <li class="element graphic isotope-item" style="position: absolute; left: 0px; top: 0px; -webkit-transform: translate3d(590px, 267px, 0px);">
                       <figure>
                           <img src="../web/images/he-thong-chong-trom.jpg" alt="">
                          
                     </li>
-                        
-                    
-                        
-                    
-					
                     <div class="clear"> </div>
                 </ul> <!-- #container -->
 
@@ -382,13 +376,21 @@
 					 <div class="Info" style="float: left; width: 70%; padding-left: 10%; TEXT-ALIGN: LEFT;">
 						<h3 style="FONT-SIZE:35PX; color: white;">Xuân Phong</h3>
 						<span>ÔNG CHỦ</span>
-						<p style="text-align: justify;font-size: 20px;">TRÊN 15 NĂM KINH NGHIỆM, TÔI ĐẢM BẢO SẼ MANG LẠI NHỮNG DỊCH VỤ TỐT NHẤT CHO NGÔI NHÀ CỦA BẠN. HÃY ĐẾN VỚI CHÚNG TÔI ĐỂ TẬN HƯỞNG NHỮNG DỊCH VỤ MỚI VÀ HIỆN ĐẠI NHẤT<br>
-										
+						<p style="text-align: justify;font-size: 20px;">
+						
+							<img class="image" src="http://www.8p-design.com/templates/base/images/white/quote_left.png"/>
+							TRÊN 15 NĂM KINH NGHIỆM, TÔI ĐẢM BẢO SẼ MANG LẠI NHỮNG DỊCH VỤ TỐT NHẤT CHO NGÔI NHÀ CỦA BẠN. 
+							HÃY ĐẾN VỚI CHÚNG TÔI ĐỂ TẬN HƯỞNG NHỮNG DỊCH VỤ MỚI VÀ HIỆN ĐẠI NHẤT!
+							<img class="image" src="http://www.8p-design.com/templates/base/images/white/quote_left.png"/>
+					
+					</p>
+						
 						<p style="font-size: 25px;">HÃY LIÊN HỆ VỚI CHÚNG TÔI TẠI:
 						<br>Kim Âu, Đặng Xá, <br>
 						Gia Lâm, Hà Nội<br>
-						ĐT: <strong>098 540 1973</strong><br>Mail: <a href="mailto:hotro@diennuocdaiphong.com">hotro@diennuocdaiphong.com</a>
-</p></p>			
+						ĐT: <strong>098.540.1973</strong><br>
+						Mail: <a href="mailto:hotro@diennuocdaiphong.com">hotro@diennuocdaiphong.com</a>
+						</p></p>
 					 
 				</div>
 						</div>
@@ -401,77 +403,9 @@
 		<h2>Liên hệ với chúng tôi qua:</h2>
 			<div class="contact-form">
 				<div class="form">
-					<h3>BẢN ĐỒ:  <section id="result"></section> </h3></br>
-					<div style="z-index:9999;">
-												
-<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-
-<section id="gMap"></section>
-
-<script>
-var result = document.querySelector('#result');
-			
-			navigator.geolocation.getCurrentPosition(geoFunc, errFunc)
-			
-			function geoFunc(e){
-				console.log(e);
-				var lati = e.coords.latitude;
-				var loti = e.coords.longitude;
-				var accu = e.coords.accuracy;
-				// Google Map
-				var mapcanvas = document.createElement('div');
-				mapcanvas.id = 'mapcontainer';
-				mapcanvas.style.height = '200px';
-				mapcanvas.style.width = '100%';
-				document.querySelector('#gMap').appendChild(mapcanvas);
-				var coords = new google.maps.LatLng(lati,loti);
-				var options = {
-					zoom: 15,
-					center: coords,
-					mapTypeControl: true,
-					navigationControlOptions: {
-						style: google.maps.NavigationControlStyle.SMALL
-					},
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
-				
-				var rendererOptions = { map: map };
-				directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
-        		// Begin route
-				var start_point = new google.maps.LatLng (lati,loti);
-				var dest_point = new google.maps.LatLng (21.023343,105.959369);
-				var request = {
-						origin: dest_point,
-						destination: start_point,
-						travelMode: google.maps.DirectionsTravelMode.DRIVING
-						};
-				directionsService = new google.maps.DirectionsService();
-				directionsService.route(request, function(response, status) {
-          console.log(response);
-					if (status == google.maps.DirectionsStatus.OK) {
-						directionsDisplay.setDirections(response);
-						console.log(response);
-						var distance = response.routes[0].legs[0].distance.text;
-						result.innerHTML += 'Bạn đang cách chúng tôi: '+distance;
-					}else{
-						console.log('failed to get directions');
-					}
-				});
-				
-			}
-			function errFunc(e){
-				console.log(e);
-				// PERMISSION_DENIED: 1
-				// POSITION_UNAVAILABLE: 2
-				// TIMEOUT: 3
-			}
-
-</script>
-					</div>
-
-					
-					</div>
+					<h3>BẢN ĐỒ</h3></br>
+				  			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7448.399722170882!2d105.95703133175554!3d21.024687612560683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a899cb838e7f%3A0xa0e6e0a8363702c9!2zS2ltIMOCdSwgUGjDuiBUaOG7iywgR2lhIEzDom0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1413800544411" width="100%" height="200px" frameborder="0" style="border:0"></iframe>					
+						</div>
 				<div class="para-contact">
 					<h4>Fanpage</h4>	
 <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3a%2f%2fwww.facebook.com%2fdiennuocdaiphong.0985401973&amp;width=355&amp;height=290&amp;colorscheme=dark&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appid=124844764391720" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" allowtransparency="true"></iframe>

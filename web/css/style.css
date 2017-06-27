@@ -788,10 +788,11 @@ body > div.message > div > div {
 
 .no-touch .cs-style-5 figure:hover img,
 .cs-style-5 figure.cs-hover img {
-	-webkit-transform: scale(1.5);
+	-webkit-transform: scale(0.4);
 	-moz-transform: scale(0.4);
 	-ms-transform: scale(0.4);
-	}
+	transform: scale(0.4);
+}
 
 .cs-style-5 figcaption {
 	height: 100%;
@@ -1504,7 +1505,6 @@ body {
 	text-indent: 100%;
 	background: url(../images/top_move.png) no-repeat right top;
 }
-
 /***********end-contact*************/
 /*--- social ---*/
 .social {
